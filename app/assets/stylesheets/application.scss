@@ -25,5 +25,11 @@ body {
  @import "base/variables";
 
  // Partials - main css files
- @import "partials/layout/*";
+@import "partials/layout/*";
 @import "partials/*";
+
+// Variables
+@import "base/variables";
+
+// Default styles
+@import "base/default";
