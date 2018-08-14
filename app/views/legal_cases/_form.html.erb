@@ -1,0 +1,32 @@
+<%= form_with(model: legal_case, local: true) do |form| %>
+  <% if legal_case.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(legal_case.errors.count, "error") %> prohibited this legal_case from being saved:</h2>
+
+      <ul>
+      <% legal_case.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :caseID %>
+    <%= form.text_field :caseID %>
+  </div>
+
+  <div class="field">
+    <%= form.label :isActive %>
+    <%= form.check_box :isActive %>
+  </div>
+
+  <div class="field">
+    <%= form.label :country %>
+    <%= form.text_field :country %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

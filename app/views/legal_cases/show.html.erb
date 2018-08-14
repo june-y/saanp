@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Caseid:</strong>
+  <%= @legal_case.caseID %>
+</p>
+
+<p>
+  <strong>Isactive:</strong>
+  <%= @legal_case.isActive %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @legal_case.country %>
+</p>
+
+<%= link_to 'Edit', edit_legal_case_path(@legal_case) %> |
+<%= link_to 'Back', legal_cases_path %>
