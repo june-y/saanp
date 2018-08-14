@@ -3,5 +3,6 @@ FactoryBot.define do
     caseID "MyString"
     isActive false
     country "MyString"
+    client
   end
 end
