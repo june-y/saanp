@@ -1,3 +1,3 @@
 class Client < ApplicationRecord
-  has_many :clients
+  #has_many :legal_cases
 end

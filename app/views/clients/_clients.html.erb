@@ -1,0 +1,9 @@
+<h4 class="client-text">
+  <%= truncate(client.clientID, :length => 60) %>
+</h4>
+<div class="client-content">
+  <% @clients.each do |client| %>
+    <h3><%= client.name %></h3>
+    <p><%= client.address %></p>
+  <% end %>
+</div>

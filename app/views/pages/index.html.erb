@@ -5,6 +5,7 @@
 
     <div id="main-content" class="col-sm-9">
     </div><!-- main-content -->
-
+      <%= render :partial => "clients/clients", :collection => @clients %>
+      <%= render :partial => "legal_cases/legal_cases", :collection => @legal_cases %>
   </div><!-- row -->
 </div><!-- container -->

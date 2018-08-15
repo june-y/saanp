@@ -10,6 +10,7 @@ class LegalCasesController < ApplicationController
   # GET /legal_cases/1
   # GET /legal_cases/1.json
   def show
+    @legal_case = LegalCase.find(params[:id])
   end
 
   # GET /legal_cases/new
