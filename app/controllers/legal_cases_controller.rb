@@ -1,6 +1,6 @@
 class LegalCasesController < ApplicationController
   before_action :set_legal_case, only: [:show, :edit, :update, :destroy]
-
+#the controller is only concerned with the HTTP request/response cycle.
   # GET /legal_cases
   # GET /legal_cases.json
   def index

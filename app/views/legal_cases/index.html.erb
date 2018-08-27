@@ -18,6 +18,7 @@
         <td><%= legal_case.caseID %></td>
         <td><%= legal_case.isActive %></td>
         <td><%= legal_case.country %></td>
+        
         <td><%= link_to 'Show', legal_case %></td>
         <td><%= link_to 'Edit', edit_legal_case_path(legal_case) %></td>
         <td><%= link_to 'Destroy', legal_case, method: :delete, data: { confirm: 'Are you sure?' } %></td>
