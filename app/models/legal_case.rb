@@ -13,7 +13,8 @@
 
 class LegalCase < ApplicationRecord
   belongs_to :client
-  attr_accessor :caseID, :isActive, :name, :country
-
+  has_many :items
+  attr_accessor :case_id, :isActive, :name, :country, :item_attributes
+  accepts_nested_attributes_for :items
   validates_presence_of :client_id, :name
 end

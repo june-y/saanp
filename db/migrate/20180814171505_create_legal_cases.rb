@@ -9,12 +9,6 @@ class CreateLegalCases < ActiveRecord::Migration[5.2]
       t.timestamps
     end
 
-    create_table :clients do |t|
-      t.numeric :client_id
-      t.string :name
-      t.timestamps
-    end
-
 
   end
 end

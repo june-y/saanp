@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :items
   resources :legal_cases
   resources :clients
   patch 'clients/:id/edit', to: 'clients#edit'
